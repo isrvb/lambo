@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+section{
+    padding: 3rem 0 2rem;
+}
+:root{
+    --container-color: #788da1;
+    --second-color: #fd8f44;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+.home{
+    width: 100%;
+    min-height: 540px;
+    background: white/*#788DA1C4*/;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color:black;
+}
+.home1{
+    width: 100%;
+    min-height: 540px;
+    background: white/*#E8EAEBD6*/;
+    display: grid;
+/*    justify-content: center;
+    align-items: center;    */
+    border-radius: 30px;
+}
+
+.descriptionCompany{
+    justify-content: center;
+}
+
+.companyTitle{
+    justify-content: center;
+}
+
+.home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.home-title{
+    font-size: 50px;
+    color:black;
+}
+
+.home-title2{
+    font-size: 2.5rem;
+}
+
+.home-subtitle{
+    font-size: 16px;
+}
+
+.ladoDerecho{
+    /*float:right;*/
+    text-align:right;
+}
+
+.parrafo1 {
+  float: right;
+  width: 60%;
+  margin: 35px;
+}
+
+header{
+    /* Primer version
+    background: rgba(0, 0, 0, 0.7);
+    width: 96%;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+*/
+
+    color: black;
+    width: 102%;
+    height: 80px;
+    background: white   /*  rgba(0, 0, 0, 0.7)    */;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    /*top: 20;*/
+    z-index: 200;
+    justify-content: right;
+    margin: -12px 0px 0px -42px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+nav ul li a{
+    display: block;
+    padding: 20px;
+    color: black    /*   #fff   */;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background: #eca023;
+    border-radius:40px;
+}
+
+li{
+    text-align:center;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h2{
+    text-align: left;
+}
+.container__card{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius:15px 15px 15px 15px;
+}
+
+.card{
+    width: 350px;
+    max-width: 900px;
+    margin: -18px;
+    transition: all 300ms;
+    border-radius:15px 15px 15px 15px;
+}
+.card:hover{
+    width: 350px;
+}
+.card .cover{
+    width: 92%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    left: -13px;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 54px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+.card:hover .cover img{
+    top: 40px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 350px;
+    height: 255px;
+    position: absolute;
+    bottom: -80px;
+    left: -14;
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+    transition: all 300ms;
+}
+.card:nth-of-type(1) .img__back{
+    background-color: #ffffff;
+    border-radius:15px 15px 15px 15px;
+}
+.card:nth-of-type(2) .img__back{
+    background-color: #ffffff;
+    border-radius:15px 15px 15px 15px;
+}
+.card:nth-of-type(3) .img__back{
+    background-color: #ffffff;
+    border-radius:15px 15px 15px 15px;
+}
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    width:0;
+    background: white;
+    margin-top: -25px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+.card:hover .description{
+    padding: 40px;
+}
+.card .description h2{
+    margin-top: 10px;
+}
+.card .description p{
+    margin-top: 10px;
+}
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #ffffff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
+    transition: all 300ms;
+    display: block;
+}
